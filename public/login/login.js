@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event){
 
     if(email && password){
 
-        axios.post('http://localhost:3000/user/login', loginDetails)
+        axios.post('https://expense-tracker-using-mongoose-xt7ie0020.vercel.app', loginDetails)
             .then((res) => {
                 if(res.status === 200){
                     alert("Login Successful");
