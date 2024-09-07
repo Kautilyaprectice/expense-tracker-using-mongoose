@@ -2,7 +2,7 @@ document.getElementById("forgotPasswordForm").addEventListener('submit', functio
     event.preventDefault();
 
     const email = document.getElementById('email').value;
-    axios.post('http://localhost:3000/password/forgotpassword', { email: email })
+    axios.post('https://expense-tracker-using-mongoose-xt7ie0020.vercel.app/password/forgotpassword', { email: email })
         .then((res) => {
             console.log(res.data);
             alert("Email sent successfully");
