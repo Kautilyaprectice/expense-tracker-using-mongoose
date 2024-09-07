@@ -4,7 +4,7 @@ const router = express.Router();
 const userAuthentication = require('../middlewares/authenticate');
 
 router.post('/user/signup', userController.createUser);
-router.post('/user/login', userController.loginUser);
+router.post('/', userController.loginUser);
 
 
 module.exports = router;
